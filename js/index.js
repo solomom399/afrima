@@ -13,6 +13,7 @@ $(".login").submit(function(){
       success: function(resp) {
         $(".gain").html("Login")
         if(resp == "1"){
+          localStorage.setItem("access", "open")
           $(".gain").attr("disabled","disabled")
           location.href = "data/home.html"
         } else {
@@ -130,6 +131,7 @@ $(".logout").click(function(){
       url: path+"logout.php",
       success: function(resp) {
         if (resp == 1) {
+          localStorage.removeItem("access")
           location.href = "../index.html"
         } else {
           $(".me").html("Error Logging out try again")
