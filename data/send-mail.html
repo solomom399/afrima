@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+    <title>AFRIMA MOBILE</title>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-static-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="home.html">AFRIMA</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="home.html">Home</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <!--<li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Print Cards <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="africa-award-ceremony.html">Afrima Award Ceremony</a></li>
+            <li><a href="africa-music-village.html">Africa Music Village</a></li>
+            <li><a href="africa-music-business-summit.html">Africa Music Business Roundtable</a></li>
+            <li><a href="africa-media-accrediation.html">Africa Media Accrediation</a></li>
+          </ul>
+        </li>-->
+        <li><a href="send-mail.html">Send Email</a></li>
+        <li class="logout"><a href="#">Logout</a></li>
+      </ul>
+              
+    </div>
+  </div>
+</nav>
+
+
+<h1 class="mar">Send Email</h1>
+<div class="col-md-3 col-sm-3"></div>
+<div class="send-m col-md-6 col-sm-6">
+	<form class="email-form" method="POST">
+		<div class="form-group">
+			<input type="text" class="form-control" required="required" name="subject" placeholder="Subject">
+		</div>
+
+		<div class="form-group">
+			<textarea class="form-control se" required="required" name="message" placeholder="Enter text ..." rows="6"></textarea>
+		</div>
+
+		<button class="btn btn-warning pull-right send form-control">Send</button>
+	</form>
+</div>
+<div class="col-md-3 col-sm-3"></div>
+
+
+
+<p data-toggle="modal" data-target="#my_Modal" class="run"></p>
+<div class="modal fade " id="my_Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+	    
+        <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <center><h4 class="me"></h4></center>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<p data-toggle="modal" data-target="#myModal" class="run2"></p>
+<div class="modal fade " id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <center><h4 class="me"></h4></center>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+	<script type="text/javascript" src="../js/jquery-2.2.3.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
+</body>
+</html>

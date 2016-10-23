@@ -1,0 +1,135 @@
+
+<button class="bold">Bold</button>
+<button class="italic">Italic</button>
+<button class="underline">Underline</button>
+<button class="strikeThrough">Strikethrough</button>
+<button class="insertUnorderedList">Unordered</button>
+<button class="insertOrderedList">Ordered</button>
+<button class="createLink"><ins style="color: blue;">Link</ins></button>
+<button class="insertImage"><ins style="color: blue;">Image</ins></button>
+<button class="justifyLeft">Left</button>
+<button class="justifyCenter">Center</button>
+<button class="justifyFull">Full</button>
+<button class="justifyRight">Right</button>
+<button class="heading">H1</button>
+<button class="unlink">unlink</button>
+<button class="backColor">Bg</button>
+<button class="foreColor">Fg</button>
+<button class="insertHorizontalRule">Hr</button>
+<button class="undo">Undo</button>
+<button class="redo">Redo</button>
+<button class="fontName">Font</button>
+<div contenteditable="true" class="edit" style="height: 300px; border: 1px solid #000; overflow-x: scroll;"></div>
+
+
+<button class="see">See</button>
+<p contenteditable="true">You can <b>edit</b> this paragraph!</p>
+'<button>• Unordered List</button>'+
+
+<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+<script type="text/javascript">
+	$(".bold").click(function(){
+		document.execCommand('bold')
+	})
+
+	$(".italic").click(function(){
+		document.execCommand('italic')
+	})
+
+	$(".underline").click(function(){
+		document.execCommand('underline')
+	})
+
+	$(".strikeThrough").click(function(){
+		document.execCommand('strikeThrough')
+	})
+
+	$(".insertUnorderedList").click(function(){
+		document.execCommand('insertUnorderedList')
+	})
+
+	$(".insertOrderedList").click(function(){
+		document.execCommand('insertOrderedList')
+	})
+
+	$(".justifyLeft").click(function(){
+		document.execCommand('justifyLeft')
+	})
+
+	$(".justifyCenter").click(function(){
+		document.execCommand('justifyCenter')
+	})
+
+	$(".justifyFull").click(function(){
+		document.execCommand('justifyFull')
+	})
+
+	$(".justifyRight").click(function(){
+		document.execCommand('justifyRight')
+	})
+
+	$(".unlink").click(function(){
+		document.execCommand('unlink')
+	})
+
+
+	$(".insertHorizontalRule").click(function(){
+		document.execCommand('insertHorizontalRule')
+	})
+
+	$(".redo").click(function(){
+		document.execCommand('redo')
+	})
+
+	$(".undo").click(function(){
+		document.execCommand('undo')
+	})
+
+	$(".fontName").click(function(){
+		document.execCommand('fontName', false, 'courier')
+	})
+
+	$(".createLink").click(function(){
+		var link = prompt('Please specify the link.');
+	    if(link)
+	    {
+        	document.execCommand('createLink', false, link);
+    	}
+	})
+
+
+	$(".backColor").click(function(){
+			var link = prompt('Please specify the link.');
+		    if(link)
+		    {
+	        	document.execCommand('backColor', false, link);
+	    	}
+		})
+
+	$(".foreColor").click(function(){
+			var link = prompt('Please specify the link.');
+		    if(link)
+		    {
+	        	document.execCommand('foreColor', false, link);
+	    	}
+		})
+
+	$(".insertImage").click(function(){
+		 var src = prompt('Please specify the link of the image.');
+	    if(src)
+	    {
+	        document.execCommand('insertImage', false, src);
+	    }
+	})
+
+
+	$(".heading").click(function(){
+		var tag = "heading"
+		var value = "h1"
+			 document.execCommand('formatBlock', false, '<'+value+'>')
+	})
+
+	$(".see").click(function(){
+		alert($(".edit").html())
+	})
+</script>

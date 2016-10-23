@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+    <title>AFRIMA MOBILE</title>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-static-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="home.html">AFRIMA</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="home.html">Home</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <!--<li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Print Cards <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="africa-award-ceremony.html">Afrima Award Ceremony</a></li>
+            <li><a href="africa-music-village.html">Africa Music Village</a></li>
+            <li><a href="africa-music-business-summit.html">Africa Music Business Roundtable</a></li>
+            <li><a href="africa-media-accrediation.html">Africa Media Accrediation</a></li>
+          </ul>
+        </li>-->
+        <li><a href="send-mail.html">Send Email</a></li>
+        <li class="logout"><a href="#">Logout</a></li>
+      </ul>
+              
+    </div>
+  </div>
+</nav>
+
+
+
+<h1 class="col-sm-12 le">WELCOME</h1>
+<div class="col-md-8 col-sm-8"></div>
+<div class="col-md-4 col-sm-4 move">
+  <form method="POST" class="search">
+    <fieldset>
+      <legend>Search</legend>
+      <div class="form-group">
+        <select class="form-control" name="hold">
+          <option value="first">Afrima Award Ceremony</option>
+          <option value="second">Africa Music Village</option>
+          <option value="third">Africa Music Business Round-Table</option>
+          <option value="fourth">Africa Media Accrediation</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <input type="text"  class="form-control" name="search" placeholder="Search...">
+        <span class="input-group-addon">
+          <button name="view" class="btn btn-warning view">View</button>
+        </span>
+      </div>
+    </fieldset>
+  </form>
+</div>
+
+
+<div id="get_result">
+  <center>
+    <h3>Search For Card</h3>
+  </center>
+</div>
+
+
+
+
+
+<p data-toggle="modal" data-target="#myModal" class="run2"></p>
+<div class="modal fade " id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <center><h4 class="me"></h4></center>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+	<script type="text/javascript" src="../js/jquery-2.2.3.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
+</body>
+</html>
