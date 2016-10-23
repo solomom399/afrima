@@ -1,5 +1,5 @@
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.AFRIMA.AFRIMA" version="1.0.0">
-  <name>AFRIMA-MOBILE</name>
+  <name>AFRIMA 3.0 APP</name>
   <description>Get user</description>
   <author href="https//:gmail.com" email="soabanjosodiq@gmail.com">GreatTeam</author>
   <content src="index.html"/>
